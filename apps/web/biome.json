@@ -1,7 +1,6 @@
 {
 	"extends": "//",
 	"linter": {
-		"includes": ["**/*.mjs", "*.mjs", "./*.mjs"],
 		"domains": {
 			"next": "recommended"
 		}
