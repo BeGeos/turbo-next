@@ -1,0 +1,12 @@
+{
+	"extends": "//",
+	"linter": {
+		"includes": ["**/*.mjs", "*.mjs", "./*.mjs"],
+		"domains": {
+			"next": "recommended"
+		}
+	},
+	"formatter": {
+		"includes": ["**", "!test/**", "!**/*.min.js", "!.next/**"]
+	}
+}

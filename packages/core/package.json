@@ -1,0 +1,11 @@
+{
+	"name": "@packages/core",
+	"private": true,
+	"type": "module",
+	"files": [
+		"styles/**/*"
+	],
+	"exports": {
+		"./styles": "./styles/globals.css"
+	}
+}

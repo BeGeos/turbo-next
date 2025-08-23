@@ -1,0 +1,40 @@
+{
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"includes": [
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.js",
+			"**/*.jsx",
+			"**/*.json",
+			"**/*.md",
+			"**/*.mdx",
+			"**/*.css",
+			"!node_modules/**",
+			"!.turbo/**",
+			"!dist/**",
+			"!build/**"
+		]
+	},
+	"formatter": {
+		"lineWidth": 120,
+		"indentStyle": "tab",
+		"includes": [
+			"**/*.ts",
+			"**/*.tsx",
+			"**/*.js",
+			"**/*.jsx",
+			"**/*.json",
+			"**/*.md",
+			"**/*.mdx",
+			"**/*.css",
+			"!node_modules/**",
+			"!.turbo/**",
+			"!dist/**",
+			"!build/**"
+		]
+	}
+}
