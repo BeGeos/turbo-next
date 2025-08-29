@@ -13,7 +13,7 @@
       "name": "web",
       "version": "0.1.0",
       "dependencies": {
-        "@packages/core": "workspace:*",
+        "@packages/web-ui": "workspace:*",
         "next": "^15.5.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
@@ -29,8 +29,20 @@
         "tailwindcss": "^4.1.12",
       },
     },
-    "packages/core": {
-      "name": "@packages/core",
+    "packages/tailwind-config": {
+      "name": "@packages/tailwind-config",
+      "version": "0.0.0",
+      "devDependencies": {
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.5",
+      },
+    },
+    "packages/typescript-config": {
+      "name": "@packages/typescript-config",
+      "version": "0.0.0",
+    },
+    "packages/web-ui": {
+      "name": "@packages/web-ui",
       "version": "0.0.0",
       "dependencies": {
         "@hookform/resolvers": "^5.2.1",
@@ -81,18 +93,6 @@
       "peerDependencies": {
         "react": "^19",
       },
-    },
-    "packages/tailwind-config": {
-      "name": "@packages/tailwind-config",
-      "version": "0.0.0",
-      "devDependencies": {
-        "postcss": "^8.5.3",
-        "tailwindcss": "^4.1.5",
-      },
-    },
-    "packages/typescript-config": {
-      "name": "@packages/typescript-config",
-      "version": "0.0.0",
     },
   },
   "packages": {
@@ -230,11 +230,11 @@
 
     "@next/swc-win32-x64-msvc": ["@next/swc-win32-x64-msvc@15.5.0", "", { "os": "win32", "cpu": "x64" }, "sha512-Fe1tGHxOWEyQjmygWkkXSwhFcTJuimrNu52JEuwItrKJVV4iRjbWp9I7zZjwqtiNnQmxoEvoisn8wueFLrNpvQ=="],
 
-    "@packages/core": ["@packages/core@workspace:packages/core"],
-
     "@packages/tailwind-config": ["@packages/tailwind-config@workspace:packages/tailwind-config"],
 
     "@packages/typescript-config": ["@packages/typescript-config@workspace:packages/typescript-config"],
+
+    "@packages/web-ui": ["@packages/web-ui@workspace:packages/web-ui"],
 
     "@parcel/watcher": ["@parcel/watcher@2.5.1", "", { "dependencies": { "detect-libc": "^1.0.3", "is-glob": "^4.0.3", "micromatch": "^4.0.5", "node-addon-api": "^7.0.0" }, "optionalDependencies": { "@parcel/watcher-android-arm64": "2.5.1", "@parcel/watcher-darwin-arm64": "2.5.1", "@parcel/watcher-darwin-x64": "2.5.1", "@parcel/watcher-freebsd-x64": "2.5.1", "@parcel/watcher-linux-arm-glibc": "2.5.1", "@parcel/watcher-linux-arm-musl": "2.5.1", "@parcel/watcher-linux-arm64-glibc": "2.5.1", "@parcel/watcher-linux-arm64-musl": "2.5.1", "@parcel/watcher-linux-x64-glibc": "2.5.1", "@parcel/watcher-linux-x64-musl": "2.5.1", "@parcel/watcher-win32-arm64": "2.5.1", "@parcel/watcher-win32-ia32": "2.5.1", "@parcel/watcher-win32-x64": "2.5.1" } }, "sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg=="],
 

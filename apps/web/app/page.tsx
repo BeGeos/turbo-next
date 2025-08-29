@@ -1,4 +1,4 @@
-import { Button } from "@packages/core/ui/web/components/button";
+import { Button } from "@packages/web-ui/components/button";
 import { Popcorn } from "lucide-react";
 import type { Metadata } from "next";
 

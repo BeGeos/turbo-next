@@ -1,4 +1,4 @@
-import "@packages/core/styles";
+import "@packages/web-ui/styles";
 import "./app.css";
 
 export default function RootLayout({
