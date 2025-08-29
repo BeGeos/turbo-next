@@ -1,4 +1,4 @@
-import { Button } from "@packages/web-ui/components/ds/button";
+import { Button } from "@packages/core/ui/web/components/button";
 import { Popcorn } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<main className="max-w-xl mx-auto my-8">
-			<Button icon={<Popcorn />}>Click here idiot</Button>
+			<Button icon={<Popcorn />}>Click me</Button>
 		</main>
 	);
 }
